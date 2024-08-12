@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "647685767898",
+    "project_id": "w-optics",
+    "storage_bucket": "w-optics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647685767898:android:b8929006b4969f38815be3",
+        "android_client_info": {
+          "package_name": "com.webopt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647685767898-89o49el3mmmg2nm4j1h0qm85qvjqplm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webopt",
+            "certificate_hash": "cb3aaead0ad5fd82dac603d475b19f7336d7cbb0"
+          }
+        },
+        {
+          "client_id": "647685767898-st7kjqo90e768ajvsu4e7kt75v0kc6va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webopt",
+            "certificate_hash": "f1110609cd36d9e94015d1c7cd42bee4039320d6"
+          }
+        },
+        {
+          "client_id": "647685767898-j938mfg0s2vk0b5rbkdpb962tol6occf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxk8kDLstin0Bjmj3rVllVbZEd1zaBSU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647685767898-j938mfg0s2vk0b5rbkdpb962tol6occf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

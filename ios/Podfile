@@ -1,0 +1,45 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '11.0'
+install! 'cocoapods', :deterministic_uuids => false
+
+target 'webopt' do
+  config = use_native_modules!
+
+  permissions_path = '../node_modules/react-native-permissions/ios'
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
+  pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications"
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+
+  target 'weboptTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!({ 'Flipper' => '0.74.0' })
+
+  post_install do |installer|
+    react_native_post_install(installer)
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      end
+    end
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+  end
+end

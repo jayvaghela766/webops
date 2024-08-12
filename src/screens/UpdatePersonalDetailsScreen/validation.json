@@ -1,0 +1,32 @@
+{
+  "name": {
+    "presence": true,
+    "length": {
+      "minimum": 3,
+      "maximum": 60
+    },
+    "exclusion": [""]
+  },
+  "email": {
+    "presence": true,
+    "email": true,
+    "exclusion": [""]
+  },
+  "phone": {
+    "presence": true,
+    "length": {
+      "minimum": 8,
+      "maximum": 20
+    },
+    "numericality": true,
+    "exclusion": [""]
+  },
+  "gender": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "birthday": {
+    "presence": true,
+    "exclusion": [""]
+  }
+}

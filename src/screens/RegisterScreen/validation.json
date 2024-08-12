@@ -1,0 +1,53 @@
+{
+  "step1": {
+    "phoneNumber": {
+      "presence": true,
+      "exclusion": [""]
+    }
+  },
+  "step2": {
+    "otp": {
+      "presence": true,
+      "exclusion": [""]
+    }
+  },
+  "step3": {
+    "email": {
+      "presence": true,
+      "email": true,
+      "exclusion": [""]
+    },
+    "name": {
+      "presence": true,
+      "exclusion": [""]
+    },
+    "password": {
+      "presence": true,
+      "exclusion": [""]
+    },
+    "confirmPassword": {
+      "presence": true,
+      "equality": {
+        "attribute": "password"
+      },
+      "exclusion": [""]
+    },
+    "birthday": {
+      "presence": true,
+      "exclusion": [""]
+    },
+    "gender": {
+      "presence": true,
+      "exclusion": [""]
+    },
+    "isAgreeTerm": {
+      "presence": {
+        "message": "^You haven't agree our term and condition"
+      },
+      "inclusion": {
+        "within": [true],
+        "message": "^You haven't agree our term and condition"
+      }
+    }
+  }
+}

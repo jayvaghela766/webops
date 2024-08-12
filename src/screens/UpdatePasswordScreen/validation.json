@@ -1,0 +1,26 @@
+{
+  "currentPassword": {
+    "presence": true,
+    "length": {
+      "minimum": 6,
+      "maximum": 60
+    },
+    "exclusion": [""]
+  },
+  "newPassword": {
+    "presence": true,
+    "length": {
+      "minimum": 6,
+      "maximum": 60
+    },
+    "exclusion": [""]
+  },
+  "confirmNewPassword": {
+    "presence": true,
+    "length": {
+      "minimum": 6,
+      "maximum": 60
+    },
+    "exclusion": [""]
+  }
+}

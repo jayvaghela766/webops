@@ -1,0 +1,42 @@
+{
+  "first_name": {
+    "presence": true,
+    "length": {
+      "minimum": 3,
+      "maximum": 60
+    }
+  },
+  "last_name": {
+    "presence": true,
+    "length": {
+      "minimum": 2,
+      "maximum": 60
+    }
+  },
+  "company_name": {
+  },
+  "address": {
+    "presence": true,
+    "length": {
+      "minimum": 3,
+      "maximum": 60
+    }
+  },
+  "address_detail": {
+  },
+  "city": {
+    "presence": true,
+    "length": {
+      "minimum": 3,
+      "maximum": 60
+    }
+  },
+  "postal_code": {
+    "presence": true,
+    "length": {
+      "minimum": 6,
+      "maximum": 6
+    },
+    "numericality": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "enquiry": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "name": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "email": {
+    "presence": true,
+    "email": true
+  },
+  "phoneNumber": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "remarks": {
+    "presence": true,
+    "exclusion": [""]
+  }
+}

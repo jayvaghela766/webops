@@ -1,0 +1,17 @@
+{
+  "enquiry": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "store": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "time": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "preferredDate": {
+    "presence": true
+  }
+}

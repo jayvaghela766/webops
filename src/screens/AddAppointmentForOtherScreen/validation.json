@@ -1,0 +1,25 @@
+{
+  "name": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "enquiry": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "store": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "time": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "preferredDate": {
+    "presence": true
+  },
+  "saluation": {
+    "presence": true,
+    "exclusion": [""]
+  }
+}

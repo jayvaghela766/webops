@@ -1,0 +1,18 @@
+{
+  "owner": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "cardNumber": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "expiryDate": {
+    "presence": true,
+    "exclusion": [""]
+  },
+  "cvv": {
+    "presence": true,
+    "exclusion": [""]
+  }
+}
